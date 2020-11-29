@@ -13,15 +13,28 @@ class Api::V1::CartProductsController < ApplicationController
     end
 
     def create
-        byebug
+        cart_product = CartProduct.create!(cart_product_params)
+        render json: cart_product
     end
 
     def update
         byebug
+        # cart_product = CartProduct.find(params[:id])
+        # cart_product.update(cart_product_params)
+        # render json: cart_product
     end
 
     def destroy
         byebug
+        # cart_product = CartProduct.find(params[:id])
+        # cart_product.destroy
+        # render json: cart_product
+    end
+
+    private
+
+    def cart_product_params
+        params.require(:cart_product).permit(:cart_id, :product_id, :quantity )
     end
 
 
