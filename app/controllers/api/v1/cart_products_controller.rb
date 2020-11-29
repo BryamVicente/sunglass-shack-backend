@@ -18,17 +18,16 @@ class Api::V1::CartProductsController < ApplicationController
     end
 
     def update
-        byebug
-        # cart_product = CartProduct.find(params[:id])
-        # cart_product.update(cart_product_params)
-        # render json: cart_product
+        cart_product = CartProduct.find(params[:id])
+        cart_product.update(cart_product_params)
+        render json: cart_product
     end
 
     def destroy
-        byebug
-        # cart_product = CartProduct.find(params[:id])
-        # cart_product.destroy
-        # render json: cart_product
+        
+        cart_product = CartProduct.find(params[:id])
+        cart_product.destroy
+        render json: cart_product
     end
 
     private

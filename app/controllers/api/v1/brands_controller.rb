@@ -11,16 +11,5 @@ class Api::V1::BrandsController < ApplicationController
         render json: brand
     end
 
-    def create
-        byebug
-    end
-
-    def update
-        byebug
-    end
-
-    def destroy
-        byebug
-    end
 
 end

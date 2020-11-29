@@ -18,8 +18,5 @@ class Api::V1::UsersController < ApplicationController
         byebug
     end
 
-    def destroy
-        byebug
-    end
-
+    
 end
