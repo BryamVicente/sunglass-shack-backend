@@ -1,5 +1,7 @@
 class Api::V1::CartProductsController < ApplicationController
 
+    skip_before_action :authorized
+
 
     def index
         cart_products = CartProduct.all
