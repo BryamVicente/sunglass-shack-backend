@@ -15,11 +15,11 @@ bryam = User.create!(name: "Bryam", username: "Bryam123", age: 23, email: "tesin
 
 brand1 = Brand.create!(name: "Ray-Ban")
 
-product1 = Product.create!(description: "just splendid", name:" Aviator Classic ", image: "https://assets.ray-ban.com/is/image/RayBan/805289602057_shad_qt?$594$", price: 130, brand_id: brand1.id  )
 
-cart1 = Cart.create!(user_id: ajak.id, history: false)
 
-cartP = CartProduct.create!(cart_id: cart1.id, product_id: product1.id, quantity: 1)
+# cart1 = Cart.create!(user_id: ajak.id, history: false)
+
+# cartP = CartProduct.create!(cart_id: cart1.id, product_id: product1.id, quantity: 1)
 
 Product.create!(description: "cool glasses", name: "Aviator Classics", image: "https://assets.ray-ban.com/is/image/RayBan/805289602057_shad_qt?$594$", price: 130, brand_id: brand1.id)
 
