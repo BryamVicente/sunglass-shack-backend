@@ -9,7 +9,7 @@
 # Brand.create(name: "Testing")
 # Brand.create(name: "123")
 
-ajak = User.create!(name: "Ajak Cyer", username: "Ajak123", age: 22, email: "tesing123@gmail.com", address: "testing")
+ajak = User.create!(name: "Ajak Cyer", username: "Ajak123", age: 22, email: "tesing123@gmail.com", address: "testing", password: "123")
 
 brand1 = Brand.create!(name: "Ray-Ban")
 
