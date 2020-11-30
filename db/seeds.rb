@@ -11,6 +11,8 @@
 
 ajak = User.create!(name: "Ajak Cyer", username: "Ajak123", age: 22, email: "tesing123@gmail.com", address: "testing", password: "123")
 
+bryam = User.create!(name: "Bryam", username: "Bryam123", age: 23, email: "tesing123@gmail.com", address: "testing", password: "123")
+
 brand1 = Brand.create!(name: "Ray-Ban")
 
 product1 = Product.create!(description: "just splendid", name:" Aviator Classic ", image: "https://assets.ray-ban.com/is/image/RayBan/805289602057_shad_qt?$594$", price: 130, brand_id: brand1.id  )
