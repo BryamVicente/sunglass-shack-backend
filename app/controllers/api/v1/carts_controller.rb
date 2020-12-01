@@ -19,9 +19,12 @@ class Api::V1::CartsController < ApplicationController
     end
 
     def update
-        byebug
+        cart = Cart.find(params[:id])
+        # byebug
+        cart.update(cart_params)
+        render json: cart 
     end
-
+    
     def destroy
         byebug
     end

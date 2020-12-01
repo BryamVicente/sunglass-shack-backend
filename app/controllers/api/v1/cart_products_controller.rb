@@ -23,6 +23,7 @@ class Api::V1::CartProductsController < ApplicationController
         cart_product = CartProduct.find(params[:id])
         cart_product.update(cart_product_params)
         render json: cart_product
+        
     end
 
     def destroy
