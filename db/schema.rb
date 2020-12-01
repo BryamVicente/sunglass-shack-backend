@@ -47,11 +47,16 @@ ActiveRecord::Schema.define(version: 2020_11_26_002219) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
+    t.string "first_name"
+    t.string "last_name"
     t.string "username"
     t.integer "age"
     t.string "email"
-    t.string "address"
+    t.string "address", default: "N/A"
+    t.string "address2", default: "N/A"
+    t.string "city", default: "N/A"
+    t.string "state", default: "N/A"
+    t.string "zipcode", default: "N/A"
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
