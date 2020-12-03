@@ -1,6 +1,6 @@
 class Api::V1::CartsController < ApplicationController
 
-    skip_before_action :authorized, only: [:index, :show, :create, :update]
+    skip_before_action :authorized, only: [:create, :index]
 
     def index
         carts = Cart.all
